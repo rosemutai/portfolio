@@ -1,0 +1,149 @@
+body {
+    background: #120a16;
+}
+#my-brand,
+#rose-world {
+    font-family: 'Pacifico',cursive;
+}
+a{
+    color: aliceblue;
+    
+}
+
+.customlink {
+    color: rgb(224, 141, 127);
+}
+
+.fa:hover{
+    color: wheat;
+}
+
+#my-brand:hover,
+.customlink:hover{
+    color: rgb(224, 141, 127);
+    background-color: #f5deb3;
+}
+
+.my-social {
+    color: white;
+}
+
+#my-email{
+    font-family: 'Pacifico', cursive;
+    color: rgb(224, 141, 127);
+    font-size: 1rem;
+}
+
+.button-value{
+    color: rgb(224, 141, 127);
+}
+
+h1{
+   
+    left: 50%;
+    bottom: 60%;
+}
+
+.wave-container {
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.button-links{
+    display: block;
+    margin: auto 0;
+    align-content: center;
+    text-align: center;
+}
+
+.btn-link {
+    background: #f5deb3;
+    color:rgb(224, 141, 127);
+    font-weight: 700;
+    
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: #777;
+   
+}
+
+.cards{
+    margin-top: 0;
+}
+
+.card{
+    
+    margin-top: 10px;
+    margin-left: 35px;
+    opacity: 0.5;
+    background:#f5deb3;
+    animation-name: card-animae;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+#about-info,
+#skills-info,
+#projects-info {
+    display: none;
+}
+
+
+.card h5{
+    text-align: center;
+}
+
+@keyframes card-animae{
+    from {
+        
+        height: 0%;
+        background: #f5deb3;
+    }
+	to{height: 100%;  background: gray 0.3;}
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        margin-top: -350px; 
+    }
+
+    @keyframes card-animae {
+        from {
+
+            height: 0%;
+            background: #f5deb3;
+        }
+
+        to {
+            height: 100%;
+            background: gray 0.3;
+        }
+    }
+
+}
+
+.profile-pic{
+    margin-left: 100px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    align-content: center;
+  
+}
+
+a.project-links{
+    color: #000;
+}
+
+#project-title{
+    color: rgb(224, 141, 127);
+    font-weight: 700;
+}
+
+ul li{
+    list-style-type: square;
+}
