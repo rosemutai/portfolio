@@ -15,6 +15,7 @@ from pathlib import Path
 import os
 from decouple import config
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,9 +28,8 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-
+DEBUG = True
+#django-insecure-k_w6v%jl21rcinid2f^xlfi$egh-v_^^my_w)n2f0+_qp_oe8p
 
 ALLOWED_HOSTS = ['mutairose.herokuapp.com']
 
