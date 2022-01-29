@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+    h4{
+        color: #fff;
+    }
+</style>
+
+<div class="resume-section">
+    {% for resume in my_resume%}
+
+    <h4>{{resume.title}}</h4>
+    <embed class="my-resume" src="{{ resume.curriculumvitae.url }}" type="application/pdf" >
+
+    {% endfor %}
+    </div>
+  
+</div>
+
+{% endblock content %}

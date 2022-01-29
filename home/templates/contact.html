@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="contact-me">
+    <div class="right">
+        <div class="connect">
+            <h2>let's connect</h2>
+        </div> 
+        <div class="email">
+            <i class="fa fa-envelope"></i><span>rchepngetichmutai@gmail.com</span>
+        </div>
+
+        <div class="phone">
+            <i class="fa fa-phone"></i><span>+254 703 119 877</span>
+        </div>
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/mutai-rose-b14372173" target="_blank"><i class="fa fa-linkedin"></i><span>linkedin</span></a>
+        </div>
+
+       
+
+        <div class="twitter">
+            <a href="https://twitter.com/__rosemutai" target="_blank"><i class="fa fa-twitter"></i><span>twitter</span></a>
+        </div>
+
+        <div class="github">
+            <a href="https://github.com/rosemutai" target="_blank"><i class="fa fa-github"></i><span>github</span></a>
+        </div>
+        
+    
+    </div>
+    <div class="left">
+       <form method="post">
+           {%csrf_token %}
+
+           {{form}}
+    
+           <!-- <div class="form-control">
+               <label>Email</label>
+           {{form.email}}
+           </div> -->
+
+            <!-- <div class="form-control">
+                <label>Subject</label>
+               {{form.subject}}
+            </div> -->
+
+            <!-- <div class="form-control">
+                <label >Message</label>
+               {{form.message}}
+            </div> -->
+
+            <div class="form-control">
+                <button class="contact-btn">Send</button>
+            </div>
+           
+       </form>
+    </div>
+    
+
+</div>
+
+{% endblock content %}

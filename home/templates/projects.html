@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="projects-section">
+    <p class="project-title">These are some of the Projects I have worked on</p>
+    <a href="{% url 'home' %}"  class="back-btn"><span>&#8592;</span>Back</a>
+    <div class="projects">
+        
+        {% for project in projects %}
+       
+        <div class="card">
+            <div class="img">
+                <img src="{{project.image.url}}" alt="">
+            </div>
+            <a href=""></a>
+            <h4 class="card-title">{{project.title}}</h4>
+            <p class="description">{{project.description}}</p>
+            <button type="submit" class="btn">explore</button>
+        </div>
+
+    {% endfor %}
+    </div>
+  
+</div>
+
+{% endblock content %}
